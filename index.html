@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM & BOM</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card shadow">
+                    <div class="card-header text-center">
+                        <h2>Currency Converter</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="msg"></div>
+                        <form action="" id="currency-form">
+                            <div class="form-group">
+                                <label for="amount">Amount</label>
+                                <input class="form-control" name="amount" id="amount" type="text">
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="select-currency">Select Currency</label>
+                                <select class="form-control" name="select-currency" id="select-currency">
+                                    <option value="">--Select--</option>
+                                    <option value="USD">USD</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="Pound">Pound</option>
+                                    <option value="Euro">Euro</option> 
+                                    <option value="Rupee">Rupee</option> 
+                                </select>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="submit" value="Convert" class="w-100 btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center">
+                        <h5 class="msg-details">Converted Currency</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./functions.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
